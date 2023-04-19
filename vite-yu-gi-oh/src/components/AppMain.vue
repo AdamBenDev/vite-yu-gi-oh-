@@ -2,10 +2,13 @@
 import axios from 'axios';
 import store from '../store';
 import AppCard from './AppCard.vue';
+import AppFilter from './AppFilter.vue';
+import AppFilter2 from './AppFilter2.vue';
 export default {
     components: {
         AppCard,
-        
+        AppFilter,
+        AppFilter2,
     },
     data(){
         return {
@@ -61,6 +64,19 @@ export default {
     <main class="main">
 
         <div class="container">
+
+            <div class="wrapper">
+
+                <div class="search_bar">
+                    <AppFilter @onSearch="fetchCard()" />
+                </div>
+
+                <div class="filter_type">
+                    <AppFilter2 @onFilterType="fetchCard()" />
+                </div>
+
+            </div>
+                
 
 
             <div class="counter">
