@@ -1,11 +1,17 @@
 <script>
 import store from '../store';
+
+
 export default {
+
+
     data(){
         return {
             store,
         }
     },
+
+
     methods: {
         onEnter(){
             console.log('ho premuto tasto enter');
@@ -27,6 +33,8 @@ export default {
     border: none;
     padding: 10px;
 }
+
+
 </style>
 
 
@@ -43,13 +51,3 @@ export default {
 
 
 
-
-
-
-
-
-
-
-
-
-</script>
